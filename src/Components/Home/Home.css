@@ -30,19 +30,153 @@
     display: flex;
     justify-content: center;
     align-items: center;
+   
+
 }
 
 .BigText div{
     font-weight: 1000;
     font-family: 'Mochiy Pop One';font-size: 22px;
     font-size: 50px;
+    
 }
 .BigText img{
    height: 50px;
-   
+
 }
 .BigText1 div{
     font-weight: 1000;
     font-family: 'Mochiy Pop One';font-size: 22px;
     font-size: 50px;
+    z-index: 100;
+}
+
+.show-product{
+    background: linear-gradient(to bottom, #bed5eba6, #ffffff);   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 50% 50% 0 0;
+    width: 100%;
+    height: 84rem;
+    padding-top: -128px;
+    margin-top: 93px;
+    
+   
+}
+.round-imgss{
+    
+    filter: grayscale(100%);
+    margin-top: 72px;
+    animation: round 55s infinite linear ;
+    
+}
+@keyframes round {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.Img-Container{
+    display: flex;
+    margin-top: -124rem;
+   
+
+   
+}
+.leftImages{
+margin-left: 30px;
+margin-right: 26rem;
+margin-top: -70px;
+display: flex;
+
+}
+
+.leftImages >img:nth-child(1){
+    height: 230px;
+    margin-top: 15px;
+    z-index: 10;
+   
+}
+.leftImages >img:nth-child(2){
+    height: 220px;
+   margin-left: -150px;
+   margin-top: -10px;
+   z-index: 12;
+}
+.leftImages >img:nth-child(3){
+    height: 45px;
+   margin-left: -210px;
+   margin-top: 185px;
+   z-index: 11;
+}
+.rightImages{
+    margin-top: -81px;
+    margin-left: 30px;
+    margin-right: 19px;
+    display: flex;
+    
+}
+.rightImages >img:nth-child(1){
+    height: 216px;
+    margin-top: -8px;
+    z-index: 1;
+}
+.rightImages >img:nth-child(2){
+    margin-left: -179px;
+    height: 260px;
+    margin-top: -78px;
+    z-index: 95;
+}
+
+.proText1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+   
+    font-family: 'Mochiy Pop One';font-size: 22px;
+    font-size: 30px;
+}
+.proText2{
+   
+    font-family: 'Mochiy Pop One';font-size: 22px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: -60px;
+}
+.products-text{
+    margin-top: -68rem;
+
+}
+.inputbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inputbox select{
+width: 300px;
+height: 45px;
+border-radius: 8px;
+border: 3px solid rgb(153, 187, 226);
+z-index: 100;
+}
+.inputbox select{
+    outline: none;
+}
+.white-body{
+    height: 80rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to bottom, #edf4fc, #ffffff);   
+
+    position: relative;
+    z-index:105;
+    margin-top: 265px;
 }
