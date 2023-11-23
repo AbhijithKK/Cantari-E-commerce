@@ -1,0 +1,48 @@
+.home-header {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.Home-text {
+    height: 30px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 22rem;
+  margin-right: 22rem;
+  border-radius: 9px;
+  margin-top: 100px;
+}
+
+.Home-text p {
+    background-color: rgb(236, 238, 240);
+  text-align: center;
+  color: #0051a0;
+  text-transform: uppercase;
+}
+
+.BigText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.BigText1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.BigText div{
+    font-weight: 1000;
+    font-family: 'Mochiy Pop One';font-size: 22px;
+    font-size: 50px;
+}
+.BigText img{
+   height: 50px;
+   
+}
+.BigText1 div{
+    font-weight: 1000;
+    font-family: 'Mochiy Pop One';font-size: 22px;
+    font-size: 50px;
+}
