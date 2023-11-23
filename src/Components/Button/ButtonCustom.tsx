@@ -1,6 +1,6 @@
 import React from "react";
 
-const ButtonCustom = ({ name, textColor, bgColor, wt, ht, fn }: any) => {
+const ButtonCustom = ({ name, textColor, bgColor, wt, ht, fn ,img}: any) => {
   return (
     <>
       <button
@@ -9,11 +9,18 @@ const ButtonCustom = ({ name, textColor, bgColor, wt, ht, fn }: any) => {
           backgroundColor: bgColor,
           width: wt,
           height: ht,
+          borderRadius:'12px',
+          border:"0px solid transparent",
+          fontWeight:'bolder',
+          cursor:'pointer'
         }}
         onClick={fn}
         type="button"
       >
-        {name}
+        {name}&nbsp;
+        <img src={img} alt=""style={{
+            height:'13px'
+        }} />
       </button>
     </>
   );

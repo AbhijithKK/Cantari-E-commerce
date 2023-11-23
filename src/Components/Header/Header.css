@@ -1,3 +1,29 @@
-.header{
-    
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  height: 45px;
+  border-radius: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.header img {
+  height: 35px;
+}
+.list-items {
+  text-decoration: none;
+  list-style: none;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.list-items li {
+  margin-right: 15px;
+}
+.list-items li:hover {
+  color: #0051a0;
+  cursor: pointer;
 }
