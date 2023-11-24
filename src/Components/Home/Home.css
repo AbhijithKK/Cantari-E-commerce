@@ -218,6 +218,8 @@ z-index: 109;
     position: relative;
     z-index: 111;
     margin-top: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .recipe-txt{
     display: flex;
@@ -233,16 +235,63 @@ z-index: 109;
 .recipe-txt01{
     display: flex;
     justify-content: start;
+    margin-top: 45px;
 }
 .recipe-txt01 >div:nth-child(1){
     text-transform: uppercase;
     color: #0051a0;
-    margin-left: 10px;
 }
 .recipe-txt01 >div:nth-child(2){
     text-align: center;
-    height: 25px;
-    width: 35px;
+    background-color: #cadbec;
+    height: 20px;
+    width: 110px;
     border-radius: 12px;
     color: #0051a0;
+    margin-left: 10px;
+
+}
+.recipe-image{
+    display: flex;
+    justify-content: space-between
+}
+.recipe-img-bg{
+width:45%;
+height: 350px;
+background-color: #1a76d3;
+border-radius: 18px;
+}
+.recipe-img-title{
+    display: flex;
+    font-family: 'Mochiy Pop One';
+    justify-content: center;
+    overflow: hidden;
+
+}
+.recipe-img-title >h2:nth-child(1){
+color:white;
+}
+.recipe-img-title >h2:nth-child(2){
+color:rgba(233, 228, 228, 0.253);
+}
+.recipe-img-title >h2:nth-child(3){
+color:rgba(233, 228, 228, 0.253);
+}
+.recipe-img-bg p{
+    font-family: 'Mochiy Pop One';
+
+    font-size: 22px;
+    margin-left: 10px;
+    color: white;
+}
+.recipe-image img{
+    height: 350px;
+}
+
+.foot-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+    margin-bottom: 50px;
 }

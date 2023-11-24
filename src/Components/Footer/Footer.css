@@ -1,0 +1,84 @@
+
+.Footer-h{
+    background-color: #DDE4FD;
+    height: 226px;
+}
+.Footer{
+   
+    display: grid;
+    justify-content: center;
+   
+}
+.Footer >div:nth-child(1){
+    color: #2630406c;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+.Footer >div:nth-child(2){
+    color: #000000;
+    font-weight: 800;
+    text-align: center;
+
+}
+.Footer >div:nth-child(3){
+    color: #000000;
+    text-align: center;
+
+    font-weight: 800;
+    margin-bottom: 10px;
+
+}
+.Footer-list{
+    display: flex;
+    color: rgb(23, 120, 231);
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+
+}
+.Footer-list >div:nth-child(1){
+background-color: rgb(144, 187, 228);
+margin-left: 10px;
+border-radius: 8px;
+width: 60px;
+text-align: center;
+height: 20px;
+
+}
+.Footer-list >div:nth-child(2){
+background-color: rgb(144, 187, 228);
+margin-left: 10px;
+border-radius: 8px;
+width: 80px;
+text-align: center;
+height: 20px;
+
+}
+.Footer-list >div:nth-child(3){
+background-color: rgb(144, 187, 228);
+margin-left: 10px;
+border-radius: 8px;
+width: 80px;
+text-align: center;
+height: 20px;
+
+}
+.Footer-list >div:nth-child(4){
+background-color: rgb(144, 187, 228);
+margin-left: 10px;
+border-radius: 8px;
+width: 60px;
+text-align: center;
+height: 20px;
+}
+.Footer-bar-h{
+    display: flex;
+    justify-content: center;
+}
+.Footer-bar{
+    width: 90%;
+    height: 35px;
+    border-radius: 8px;
+    background-color: white;
+}

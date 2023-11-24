@@ -12,8 +12,13 @@ import img1 from "../../Assets/p1.png";
 import img2 from "../../Assets/p2.png";
 import img3 from "../../Assets/p3.png";
 import img4 from "../../Assets/p4.png";
+import logo from "../../Assets/currease logo 1-1.png";
+import recipe1 from "../../Assets/recipe1.png";
+import recipe2 from "../../Assets/recipe2.png";
 import ButtonCustom from "../Button/ButtonCustom";
 import btnPic from "../../Assets/circle/Vector.png";
+import Footer from "../Footer/Footer";
+
 const Home = () => {
   let arr: string[];
   return (
@@ -126,29 +131,35 @@ const Home = () => {
           <span>Cook &nbsp;</span> With Favorite Recipe
           </div>
           
+
           <div className="recipe-txt01">
             <div>
 
           YUMMY DUCK ROAST
             </div>
             <div>
-            Next Recipe
+            Next Recipe &gt;
             </div>
           </div>
           <div className="recipe-image">
             <div className="recipe-img-bg">
               <div className="recipe-img-title">
-              <h1>step2</h1>
-              <h1>step2</h1>
-              <h1>step2</h1>
+              <h2>step01----</h2>
+              <h2>step02----</h2>
+              <h2>step3</h2>
               </div>
-              <p></p>
+              <p>Prepared with Currease’s Duck roast instant curry mix, the tender and juicy meat with its crispy skin glazed with honey can be the perfect holiday main dish for occasions such as Thanksgiving, Christmas, or New Year’s eve.</p>
+              <p>Honey can be the perfect holiday main dish for occasions such as Thanksgiving, Christmas, or New Year’s eve.</p>
             </div>
-            <img src="" alt="" />
-            <img src="" alt="" />
+            <img src={recipe1} alt="" />
+            <img src={recipe2} alt="" />
+          </div>
+          <div className="foot-logo">
+            <img src={logo} alt="" />
           </div>
         </div>
       {/* </div> */}
+      <Footer/>
     </>
   );
 };
