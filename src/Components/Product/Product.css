@@ -15,7 +15,7 @@
 }
 .newTad {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 .newTad div {
   margin-top: 20px;

@@ -234,7 +234,7 @@ z-index: 109;
 }
 .recipe-txt01{
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     margin-top: 45px;
 }
 .recipe-txt01 >div:nth-child(1){

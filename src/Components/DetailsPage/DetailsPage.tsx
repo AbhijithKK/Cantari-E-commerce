@@ -1,7 +1,6 @@
 import './DetailsPage.css'
 import Footer from '../Footer/Footer'
 import Header from '../Header/Header'
-import img2 from "../../Assets/p2.png";
 import ButtonCustom from '../Button/ButtonCustom';
 import btsymbol from '../../Assets/arrow.png'
 import {  useParams } from 'react-router-dom';

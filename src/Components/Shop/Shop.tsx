@@ -41,7 +41,7 @@ const Shop = () => {
   };
   useEffect(() => {
     setProlimit(product);
-  }, [refresh]);
+  }, [refresh,product]);
   useEffect(() => {
     GetAllProduct();
   }, []);

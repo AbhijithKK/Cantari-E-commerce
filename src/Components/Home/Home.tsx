@@ -8,10 +8,6 @@ import roundTxt from "../../Assets/circle/Group 2 836.png";
 import imogi from "../../Assets/emo 1.png";
 import shadow from "../../Assets/shadow.png";
 import Product from "../Product/Product";
-import img1 from "../../Assets/p1.png";
-import img2 from "../../Assets/p2.png";
-import img3 from "../../Assets/p3.png";
-import img4 from "../../Assets/p4.png";
 import recipe1 from "../../Assets/recipe1.png";
 import recipe2 from "../../Assets/recipe2.png";
 import ButtonCustom from "../Button/ButtonCustom";
@@ -99,7 +95,7 @@ const Home = () => {
           {
            products.map((val:any, i) => ( 
           <>
-            <div key={i} className={i%2==0 ?"inner-disply1":"inner-disply2"}>
+            <div key={i} className={i%2===0 ?"inner-disply1":"inner-disply2"}>
               <Product tag="New" img={val?.image} name={val?.title} kg={val?.price} color={val?.color} />
             </div>
           </>
