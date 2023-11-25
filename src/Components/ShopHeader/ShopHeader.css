@@ -1,0 +1,10 @@
+.shop-header{
+    height: 45vh;
+    background-color: #EDF3FF;
+    border-radius: 0 0 50px 50px;
+}
+.sh-header{
+    margin-left: 150px;
+    margin-right: 150px;
+    padding-top: 20px;
+}

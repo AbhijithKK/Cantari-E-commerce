@@ -1,52 +1,67 @@
-import Header from '../Header/Header'
-import './Shop.css'
-import blryellow from '../../Assets/blrYellow.png'
-import blr1 from '../../Assets/blr1.png'
+import "./Shop.css";
+import ShopHeader from "../../Components/ShopHeader/ShopHeader";
+import Product from "../Product/Product";
+import img1 from "../../Assets/p1.png";
+import ButtonCustom from "../Button/ButtonCustom";
+import btnsymbol from '../../Assets/downarrow.png'
+import Footer from "../Footer/Footer";
+
 const Shop = () => {
   return (
-    <div className='shop-header'>
-     <div className="sh-header">
-        <Header />
-      </div>
-      <div style={{
-        display:'flex',
-        marginLeft:'40px'
-        ,justifyContent:'space-between'
-      }}>
-        <img src={blr1} alt="" style={{
-            height:'130px'
-        }} />
-        {/* 00000000000000000000000000000000000000000 */}
-        <div>
-        <div className="products-text" style={{
-            marginTop:'0px'
-        }}>
-        <div className="proText1">
-          <p>
-            <span style={{ color: "#1a5797" }}>Products</span> Within
-          </p>
+    <div>
+      <ShopHeader />
+      <div className="shop-container">
+        <div className="product-count">Showing 09 of 15</div>
+        <div className="shop-product-show">
+          <div className="inner-disply3">
+            <Product tag="New" img={img1} name="ffff" kg="10kg" color="" />
+          </div>
+          <div className="inner-disply3">
+            <Product tag="New" img={img1} name="ffff" kg="10kg" color="" />
+          </div>
+          <div className="inner-disply3">
+            <Product tag="New" img={img1} name="ffff" kg="10kg" color="" />
+          </div>
+          <div className="inner-disply3">
+            <Product tag="New" img={img1} name="ffff" kg="10kg" color="" />
+          </div>
         </div>
-        <div className="proText2">
-          <p>Your Province</p>
+        <div className="shop-moreButton">
+        <ButtonCustom name='More' textColor='white' bgColor='#0051A0' wt='70px' ht='35px' fn img={btnsymbol} />
         </div>
+        <div className="shop-like-text-container">
+            <div className="shop-like-text">
+                You May <span>Also Like</span> 
+            </div>
+           <div style={{
+            display:'flex',
+            justifyContent:'space-between'
+           }}>
+           <div className="shop-arrow1">
+                &lt;
+            </div>
+            <div className="shop-arrow2">
+                &gt;
+            </div>
+           </div>
+        </div>
+        <div className="shop-product-show">
+          <div className="inner-disply3">
+            <Product tag="New" img={img1} name="ffff" kg="10kg" color="" />
+          </div>
+          <div className="inner-disply3">
+            <Product tag="New" img={img1} name="ffff" kg="10kg" color="" />
+          </div>
+          <div className="inner-disply3">
+            <Product tag="New" img={img1} name="ffff" kg="10kg" color="" />
+          </div>
+          </div>
       </div>
-      <div className="inputbox">
-        <select name="" id="">
-          <option hidden value="">
-            Select province
-          </option>
-          <option value="">option2</option>
-          <option value="">option3</option>
-        </select>
-      </div>
-      </div>
-      {/* 0000000000000000000000000000000000000000 */}
-      <img src={blryellow} alt=""style={{
-            height:'280px'
-        }} />
+      <div className="shopp-footer">
+      <Footer/>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Shop
+export default Shop;
