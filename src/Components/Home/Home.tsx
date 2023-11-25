@@ -12,7 +12,6 @@ import img1 from "../../Assets/p1.png";
 import img2 from "../../Assets/p2.png";
 import img3 from "../../Assets/p3.png";
 import img4 from "../../Assets/p4.png";
-import logo from "../../Assets/currease logo 1-1.png";
 import recipe1 from "../../Assets/recipe1.png";
 import recipe2 from "../../Assets/recipe2.png";
 import ButtonCustom from "../Button/ButtonCustom";
@@ -154,9 +153,7 @@ const Home = () => {
             <img src={recipe1} alt="" />
             <img src={recipe2} alt="" />
           </div>
-          <div className="foot-logo">
-            <img src={logo} alt="" />
-          </div>
+         
         </div>
       {/* </div> */}
       <div className="home-footer">

@@ -3,8 +3,14 @@ import fb from "../../Assets/socialMediaIcon/fb.png";
 import lin from "../../Assets/socialMediaIcon/in.png";
 import tw from "../../Assets/socialMediaIcon/tw.png";
 import ig from "../../Assets/socialMediaIcon/ig.png";
+import logo from "../../Assets/currease logo 1-1.png";
+
 const Footer = () => {
   return (
+    <>
+    <div className="foot-logo">
+            <img src={logo} alt="" />
+          </div>
     <div className="Footer-h">
       <div className="Footer">
         <div>Customer Support</div>
@@ -33,6 +39,7 @@ const Footer = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
