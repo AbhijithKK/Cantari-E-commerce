@@ -2,6 +2,7 @@
 .Footer-h{
     background-color: #DDE4FD;
     height: 226px;
+    border-radius: 10px;
 }
 .Footer{
    
@@ -81,4 +82,29 @@ height: 20px;
     height: 35px;
     border-radius: 8px;
     background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
+.copyRight{
+color: #808185e5;
+font-size: 11px;
+}
+.terms-service{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    color: #808185e5;
+    align-items: center;
+    font-size: 11px;
+
+}
+.social-img{
+    display: flex;
+    justify-content: space-around;
+
+}
+.social-img img{
+    height: 30px;
+    cursor: pointer;
+} 
