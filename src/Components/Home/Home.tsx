@@ -17,9 +17,28 @@ import recipe2 from "../../Assets/recipe2.png";
 import ButtonCustom from "../Button/ButtonCustom";
 import btnPic from "../../Assets/circle/Vector.png";
 import Footer from "../Footer/Footer";
+import { useEffect, useState } from "react";
+import { HomePage } from "../../Api/api";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
-  let arr: string[];
+  const colors=['','#DDE4FD','#F7FDDD','#F2E7FF']
+  const [products,setProducts]=useState<string[]>([])
+  const GetProducts=async()=>{
+    let data=await HomePage()
+    const newData=await data?.map((val:any,i:number):any=>{
+      val.color=colors[i]
+      return val
+    })
+    setProducts(newData)
+  }
+  const Navigate=useNavigate()
+  const GetMoreProduct=()=>{
+    Navigate('/shop')
+  }
+ useEffect(()=>{
+  GetProducts()
+ },[])
   return (
     <>
       <div className="home-header">
@@ -77,41 +96,14 @@ const Home = () => {
       <div>
         <div className="white-body"></div>
         <div className="Product_display">
-          {/* { */}
-          {/* arr.map((val, i) => ( */}
+          {
+           products.map((val:any, i) => ( 
           <>
-            <div className="inner-disply1">
-              <Product tag="New" img={img1} name="ffff" kg="10kg" color="" />
-            </div>
-            <div className="inner-disply2">
-              <Product
-                tag="New"
-                img={img2}
-                name="ffff"
-                kg="10kg"
-                color="#DDE4FD"
-              />
-            </div>
-            <div className="inner-disply1">
-              <Product
-                tag="New"
-                img={img3}
-                name="ffff"
-                kg="10kg"
-                color="#F7FDDD"
-              />
-            </div>
-            <div className="inner-disply2">
-              <Product
-                tag="New"
-                img={img4}
-                name="ffff"
-                kg="10kg"
-                color="#F2E7FF"
-              />
+            <div key={i} className={i%2==0 ?"inner-disply1":"inner-disply2"}>
+              <Product tag="New" img={val?.image} name={val?.title} kg={val?.price} color={val?.color} />
             </div>
           </>
-          {/* ))} */}
+           ))}
         </div>
         <div className="more-product">
           <ButtonCustom
@@ -120,7 +112,7 @@ const Home = () => {
             bgColor="#0051A0"
             wt="197px"
             ht="56px"
-            fn
+            fn={GetMoreProduct}
             img={btnPic}
           />
         </div>

@@ -44,6 +44,7 @@
   max-width: 200px;
   font-weight: 500;
   overflow: hidden;
+  color: black;
 }
 .footer div > img:nth-child(1) {
   height: 55px;
